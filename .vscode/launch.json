@@ -1,0 +1,173 @@
+{
+	// IntelliSense を使用して利用可能な属性を学べます。
+	// 既存の属性の説明をホバーして表示します。
+	// 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+
+	///////////////////////////////////////////////////////////////////////////
+	// configurations
+	//
+	///////////////////////////////////////////////////////////////////////////
+	"configurations": [
+		// ======================================================================
+		// Fileを実行する場合
+		// Braveを使用する
+		// ======================================================================
+		{
+			"name": "Launch Brave (file)",
+			"type": "chrome",
+			"request": "launch",
+			"file": "D:/My Web/架空サイト/Kawa-Coffee/try1/site/index.html",
+			"webRoot": "${workspaceFolder}",
+			"runtimeExecutable": "C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe",
+			"runtimeArgs": [
+				"--remote-debugging-port=9222",
+				"--user-data-dir=C:/Users/Kawashima/AppData/Local/BraveSoftware/Brave-Browser/VSCode Debug"
+			],
+			"sourceMaps": true
+		},
+
+		// ======================================================================
+		// Fileを実行する場合
+		// Chromeを使用する
+		// ======================================================================
+		//{
+		// "name": "Launch Chrome (file)",
+		// "type": "chrome",
+		// "request": "launch",
+		// "file": "d:/My Documents/Web HTML/!My Works/25 Index Page/try2/index.html"
+		//},
+
+		// ======================================================================
+		// Live Server上で実行する場合
+		// Live Serverを起動した後に、F5キーでデバッグ開始
+		// Chromeを使用する
+		// ======================================================================
+		//{
+		//	 "name": "Launch Chrome (url)",
+		//	 "type": "chrome",
+		//	 "request": "launch",
+		//	 "url": "http://127.0.0.1:5501",
+		//	 "webRoot": "${workspaceFolder}"
+		//},
+
+		// ======================================================================
+		// Live Server上で実行する場合
+		// Live Serverを起動した後に、F5キーでデバッグ開始
+		// Braveを使用する
+		// ======================================================================
+		//{
+		//	"name": "Launch Brave (url)",
+		//	"type": "chrome",
+		//	"request": "launch",
+		//	"url": "http://127.0.0.1:5501",
+		//	"webRoot": "${workspaceFolder}",
+		//	"runtimeExecutable": "C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe",
+		//	"runtimeArgs": [
+		//		"--remote-debugging-port=9222",
+		//		"--user-data-dir=C:/Users/Kawashima/AppData/Local/BraveSoftware/Brave-Browser/VSCode Debug"
+		//	],
+		//	"sourceMaps": true
+		//},
+
+		// ======================================================================
+		// Xampp Server環境実行する場合
+		// phpをステップ実行する
+		// ======================================================================
+		//{
+		//	"name": "Listen for Xdebug",
+		//	"type": "php",
+		//	"request": "launch",
+		//	"port": 9003,  // Xdebugのポートと一致させる
+		//	"pathMappings": {
+		//		"/MyWorks/php/training/プログラミングチュートリアル/bbs-yt/try2": "D:/My Xampp/htdocs/MyWorks/php/training/プログラミングチュートリアル/workout1/try2"	// ApacheのDocumentRootと一致させる
+		//	}
+		//},
+
+		// ======================================================================
+		// Xampp Server環境実行する場合
+		// JavaScriptをステップ実行する
+		// Server上で実行する場合
+		// Serverを起動した後に、F5キーでデバッグ開始
+		// Braveを使用する
+		// ======================================================================
+		//{
+		//	"name": "Launch Brave (localhost:80)",
+		//	"type": "chrome",
+		//	"request": "launch",
+		//	"url": "https://localhost/MyWorks/php/test/02%20Like-App/try1/sec3/index.html",
+		//	"webRoot": "${workspaceFolder}",
+		//	"runtimeExecutable": "C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe",
+		//	"runtimeArgs": [
+		//		"--remote-debugging-port=9222",
+		//		"--user-data-dir=C:/Users/Kawashima/AppData/Local/BraveSoftware/Brave-Browser/VSCode Debug"
+		//	],
+		//	"sourceMaps": true
+		//},
+
+		// ======================================================================
+		// Vite Server上で実行する場合
+		// Vite Serverを起動した後に、F5キーでデバッグ開始
+		// Braveを使用する
+		// ======================================================================
+		//{
+		//	"name": "Launch Brave (url)",
+		//	"type": "chrome",
+		//	"request": "launch",
+		//	"url": "http://localhost:5173/",
+		//	"webRoot": "${workspaceFolder}",
+		//	"runtimeExecutable": "C://Program Files//BraveSoftware//Brave-Browser//Application//brave.exe", // Windowsの例
+		//	"runtimeArgs": [
+		//		"--remote-debugging-port=9222",
+		//		"--user-data-dir=C:/Users/Kawashima/AppData/Local/BraveSoftware/Brave-Browser/VSCode Debug"
+		//	],
+		//	"sourceMaps": true
+		//},
+
+		// ======================================================================
+		// Node.js Server起動
+		// Node.js Serverのみを起動する。Browserは起動しない
+		// ======================================================================
+		//{
+		//	"name": "Launch Node Server",
+		//	"type": "node",
+		//	"request": "launch",
+		//	"program": "${workspaceFolder}/server.js",
+		//	"env": {
+		//		"NODE_ENV": "development"
+		//	},
+		//	"console": "integratedTerminal"
+		//},
+
+		// ======================================================================
+		// Node.js Server url実行
+		// Node.js Serverが既に実行中において、url実行する
+		// Brave Browser使用
+		// ======================================================================
+		//{
+		//	"name": "Launch Brave (url) [Node Server]",
+		//	"type": "chrome",
+		//	"request": "launch",
+		//	"url": "http://localhost:3000/",
+		//	"webRoot": "${workspaceFolder}",
+		//	"runtimeExecutable": "C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe",
+		//	"runtimeArgs": [
+		//		"--remote-debugging-port=9222",
+		//		"--user-data-dir=C:/Users/Kawashima/AppData/Local/BraveSoftware/Brave-Browser/VSCode Debug"
+		//	],
+		//	"sourceMaps": true,
+		//	"reuseExistingServer": false
+		//},
+	],
+
+	///////////////////////////////////////////////////////////////////////////
+	// compounds
+	//
+	///////////////////////////////////////////////////////////////////////////
+	//"compounds": [
+	//	{
+	//		"name": "Start Node Server and Brave (url)",
+	//		"configurations": ["Launch Node Server", "Launch Brave (url) [Node Server]"]
+	//	}
+	//]
+}
